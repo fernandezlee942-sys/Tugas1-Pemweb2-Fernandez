@@ -1,0 +1,252 @@
+.Disclaimer{
+    font-weight: bold;
+    font-size: 40px;
+    background-color: white;
+    outline: solid 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+#NavHead{
+    font-size: 40px;
+    margin: 0px 0px 3px 0px;
+}
+
+.navBar{
+    background-color: white;
+    height: 32px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 3px solid black;
+}
+
+
+
+#Home{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Introduction{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+#About{
+    background-color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#Contact{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+.clock{
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+    /* aspect-ratio: 1/1; */
+    background-color: rgb(183, 178, 178);
+    border-radius: 50%;
+    margin-top: 10px;
+    outline: solid black 5px;
+    position: relative;
+}
+
+.clockHour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom center;
+    animation: spin-counter 6s linear infinite;
+}
+
+.clockMins{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 60px;
+    background-color: white;
+    border-radius: 4px;
+    transform: translate(-50%, -100%);
+    /* kalo pake koordinat normal pas kt trk left 50% kan ada selisih width/2 yang harus diapakan nah ini guna translatenya -100% cmn buat bikin jarum dri bawah ke atam */
+    
+    transform-origin: bottom center;
+    animation: spin-counter 0.5s linear infinite; 
+}
+
+.dot{
+    position: absolute;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    width: 10px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+@keyframes spin-counter {
+    from {
+        transform: translate(-50%, -100%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -100%) rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.rainbow-radial {
+  background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+  height: 100vh;
+  animation: rainbowHyp 500ms steps(1) infinite;
+}
+
+@keyframes rainbowHyp{
+    0%{
+        background: radial-gradient(circle, orange, yellow, green, blue, indigo, violet, red);
+        color: red;
+    }
+    16%{
+        background: radial-gradient(circle, yellow, green, blue, indigo, violet, red, orange);
+        color: orange;
+    }
+    33%{
+        background: radial-gradient(circle, green, blue, indigo, violet, red, orange, yellow);
+        color: yellow;
+    }
+    50%{
+        background: radial-gradient(circle, blue, indigo, violet, red, orange, yellow, green);        
+        color: green;
+    }
+    66%{
+        background: radial-gradient(circle, indigo, violet, red, orange, yellow, green, blue);
+        color: blue;
+    }
+    82%{
+        background: radial-gradient(circle, violet, red, orange, yellow, green, blue, indigo);
+        color: indigo;
+    }
+    100%{
+        background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+        color: violet;
+    }
+}   
+
+
+.spiral {
+    /* was kinda hoping to make it into smtg like a spiral but its kinda hard (you need an image for tht and i got no such design skill so i'll bear with this */   
+    margin-bottom: 150px;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: 
+        repeating-conic-gradient(
+            from 0deg,
+            yellow 0deg,
+            yellow 20deg,
+            red 20deg,
+            red 40deg
+        ),
+        repeating-conic-gradient(
+            from 45deg,
+            transparent 0deg,
+            transparent 20deg,
+            rgba(0, 0, 0, 0.4) 20deg,
+            rgba(0, 0, 0, 0.4) 40deg
+        );
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+body {
+    background-image: conic-gradient(white 90deg, black 90deg 180deg, white 180deg 270deg, black 270deg);
+    background-size: 4vw 4vw;
+    animation: changeBg 800ms steps(1) infinite;   
+}
+
+@keyframes changeBg {
+    0%{
+        background-image: conic-gradient(white 90deg, black 90deg 180deg, white 180deg 270deg, black 270deg);
+    }
+    33%{
+        background-image: conic-gradient(black 90deg, white 90deg 180deg, black 180deg 270deg, white 270deg);
+    }
+    66%{
+        background-image: conic-gradient(white 90deg, black 90deg 180deg, white 180deg 270deg, black 270deg);
+    }
+    100%{
+        background-image: conic-gradient(black 90deg, white 90deg 180deg, black 180deg 270deg, white 270deg);
+    }
+}
+
+
+
+
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+
+/* buat mobile nanti */
+@media (max-width: 768px){
+
+}
