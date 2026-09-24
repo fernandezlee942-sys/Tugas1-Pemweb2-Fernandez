@@ -134,7 +134,8 @@
     grid-template-columns: repeat(3, 1fr);
 }
 #Projects img{
-    max-width: 400px;
+    max-width: 200px;
+    max-height: 200px;
 
 }
 
@@ -499,20 +500,20 @@ li{
 
 .clock{
     margin-right: 3px;
-    height: 100px;
+    height: 40px;
     margin-top: 4px;
     outline: solid black 3px;
 }
 
 .clockHour{
-    width: 2px;
-    height: 30px;
+    width: 1px;
+    height: 10px;
     border-radius: 1px;
 }
 
 .clockMins{
-    width: 2px;
-    height: 30px;
+    width: 1px;
+    height: 15px;
     border-radius: 1px;
 }
 
