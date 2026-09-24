@@ -53,17 +53,17 @@
     background-color: black;
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-left: 3px solid white;
     border-right: 3px solid white;
 
 }
 #Home img{
     width: auto;
-    height: 190px;
+    height: auto;
 }
 .Introduction{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
