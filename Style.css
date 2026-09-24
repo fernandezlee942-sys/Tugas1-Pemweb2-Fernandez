@@ -103,6 +103,7 @@
 .SkillsContent{
     display: flex;
     justify-content: space-around;
+    flex-shrink: 0;
 }
 #Skills li{
     list-style: circle;
