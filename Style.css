@@ -533,6 +533,10 @@ li{
 .spiralBW {
     margin: 0;
     width: 10px;
+    height: 10px;
+    max-width: 10px;
+    max-width: 10px;
+    aspect-ratio: 1/1;
 }
 
 
