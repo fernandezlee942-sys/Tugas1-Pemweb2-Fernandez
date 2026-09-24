@@ -26,7 +26,7 @@
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    gap: 10px;
+    margin: 0 2px;
     justify-content: center;
 }
 
@@ -452,7 +452,7 @@ li{
 }
 
 #Skills ul{
-    gap: 10px;
+    gap: 30px;
 }
 
 #Projects{
