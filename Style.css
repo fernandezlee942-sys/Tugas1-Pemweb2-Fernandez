@@ -409,7 +409,7 @@ li{
 }
 
 .navBar{
-    font-size: 25px;
+    font-size: 17px;
     height: 32px;
     padding: 4px;
     outline: 1px solid black;
@@ -426,7 +426,7 @@ li{
 }
 
 .Introduction{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #About{
