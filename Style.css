@@ -497,7 +497,7 @@ li{
 
 
 .clock{
-    width: 80px;
+    width: 30px;
     margin-right: 3px;
     height: 30px;
     margin-top: 4px;
@@ -538,7 +538,7 @@ li{
 }
 
 .spiralBW {
-    margin-bottom: 20px;
+    margin: 0;
     width: 100px;
 }
 
