@@ -1,12 +1,34 @@
+*{
+    user-select: none;    
+
+}
+#EasterEgg{
+    font-size: 30px;
+}
+
 .Disclaimer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     font-size: 40px;
     background-color: white;
     outline: solid 5px;
     margin: 0px;
     text-align: center;
+
 }
 
+#header{
+    background-color: black;
+    outline: 3px solid white;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 
 #NavHead{
@@ -15,6 +37,7 @@
 }
 
 .navBar{
+    font-size: 35px;
     background-color: white;
     height: 32px;
     padding: 8px;
@@ -31,27 +54,132 @@
     color: white;
     display: flex;
     justify-content: space-evenly;
-}
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 
+}
+#Home img{
+    width: auto;
+    height: 190px;
+}
 .Introduction{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
-
-
-
 
 #About{
     background-color: white;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 30px;
+    text-align: center;
 }
+.AboutTitle{
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: solid black 4px;
+    display: inline-block;
+}
+.AboutContent{
+    display: flex;
+    justify-content: space-around;
+}
+
+#Skills{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#Skills h1{
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: solid white 4px;
+    display: inline-block;
+}
+.SkillsContent{
+    display: flex;
+    justify-content: space-around;
+}
+#Skills li{
+    list-style: circle;
+}
+#Skills ul{
+    margin: 0;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+#Projects{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#Projects h1{
+    font-size: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+
+}
+#Projects ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#Projects img{
+    max-width: 400px;
+
+}
+
+#Projects ul{
+    margin: 0;
+}
+
+
 
 #Contact{
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 30px;
 }
+#Contact a{
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-top: 70px;
+    color: yellow;
+}   
+.ContactContent{
+    display: flex;
+    justify-content: space-around;
+}
+#Footer{
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#Hint{
+    font-size: 30px;
+}
+#copyright{
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+
+    background-color: yellow;
+    color: blue;
+    font-size: 32px;
+    border-top: white solid 3px;
+    border-bottom: black solid 3px;
+}
+
 
 a{
     color: black;
@@ -61,20 +189,10 @@ a{
 }
 
 
-
-
-
-
-
-
-
-
-
 .clock{
     margin-right: 10px;
-    width: 150px;
-    height: 150px;
-    /* aspect-ratio: 1/1; */
+    height: 200px;
+    aspect-ratio: 1/1;
     background-color: rgb(183, 178, 178);
     border-radius: 50%;
     margin-top: 10px;
@@ -130,19 +248,11 @@ a{
 }
 
 
-
-
-
-
-
-
-
-
-
 .rainbow-radial {
   background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
   height: 100vh;
   animation: rainbowHyp 500ms steps(1) infinite;
+  font-size: 80px;
 }
 
 @keyframes rainbowHyp{
@@ -180,7 +290,7 @@ a{
 .spiral {
     /* was kinda hoping to make it into smtg like a spiral but its kinda hard (you need an image for tht and i got no such design skill so i'll bear with this */   
     margin-bottom: 150px;
-    width: 150px;
+    width: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
@@ -201,6 +311,33 @@ a{
         );
     animation: spin 4s linear infinite;
 }
+
+.spiralBW {
+    /* was kinda hoping to make it into smtg like a spiral but its kinda hard (you need an image for tht and i got no such design skill so i'll bear with this */   
+    margin-bottom: 150px;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: 
+        repeating-conic-gradient(
+            from 0deg,
+            black 0deg,
+            black 20deg,
+            white 20deg,
+            white 40deg
+        ),
+        repeating-conic-gradient(
+            from 45deg,
+            transparent 0deg,
+            transparent 20deg,
+            rgba(0, 0, 0, 0.4) 20deg,
+            rgba(0, 0, 0, 0.4) 40deg
+        );
+    animation: spin 4s linear infinite;
+    margin: 0;
+}
+
 
 @keyframes spin {
     from {
@@ -234,11 +371,116 @@ body {
 }
 
 
-
-
-
 li{
     list-style: none;
+}
+
+
+
+/* buat mobile nanti */
+@media (max-width: 768px){
+
+    #EasterEgg{
+        font-size: 14px;
+    }
+
+    
+.Disclaimer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    outline: solid 3px;
+}
+
+#header{
+    outline: 2px solid white;
+    margin-top: 30px;
+    padding: 8px;
+    font-size: 20px;
+    gap: 4px;
+}
+
+
+#NavHead{
+    font-size: 20px;
+    margin: 0px 0px 3px 0px;
+}
+
+.navBar{
+    font-size: 25px;
+    height: 32px;
+    padding: 4px;
+    outline: 1px solid black;
+}
+
+#Home{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#Home img{
+    width: auto;
+    height: 230px;
+}
+
+.Introduction{
+    font-size: 15px;
+}
+
+#About{
+    font-size: 15px;
+}
+
+.AboutTitle{
+    margin-left: 8px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+
+#Skills{
+    font-size: 15px;
+}
+
+#Skills h1{
+    font-size: 20px;
+    margin-left: 8px;
+    border-bottom: solid white 2px;
+}
+
+#Skills ul{
+    gap: 40px;
+}
+
+#Projects{
+    font-size: 15px;
+}
+
+#Projects h1{
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#Projects img{
+    max-width: 200px;
+}
+
+#Contact{
+    font-size: 14px;
+}
+#Contact a{
+    font-size: 20px;
+    margin-top: 20px;
+}   
+
+#Footer{
+    font-size: 20px;
+}
+
+#Hint{
+    font-size: 16px;
+}
+#copyright{
+    font-size: 16px;
 }
 
 
@@ -246,7 +488,55 @@ li{
 
 
 
-/* buat mobile nanti */
-@media (max-width: 768px){
+
+
+
+
+
+
+
+.clock{
+    margin-right: 3px;
+    height: 100px;
+    margin-top: 4px;
+    outline: solid black 3px;
+}
+
+.clockHour{
+    width: 2px;
+    height: 30px;
+    border-radius: 1px;
+}
+
+.clockMins{
+    width: 2px;
+    height: 30px;
+    border-radius: 1px;
+}
+
+.dot{
+    width: 4px;
+}
+
+
+
+.rainbow-radial {
+  background: radial-gradient(circle, red, orange, yellow, green, blue, indigo, violet);
+  height: 100vh;
+  animation: rainbowHyp 500ms steps(1) infinite;
+  font-size: 40px;
+}
+
+
+.spiral {
+    margin-bottom: 120px;
+    width: 100px;
+}
+
+.spiralBW {
+    margin-bottom: 120px;
+    width: 100px;
+}
+
 
 }
