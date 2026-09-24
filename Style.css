@@ -103,6 +103,7 @@
 .SkillsContent{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-shrink: 0;
 }
 #Skills li{
@@ -160,6 +161,7 @@
 .ContactContent{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 #Footer{
     margin: 0;
@@ -398,7 +400,8 @@ li{
     margin-top: 30px;
     padding: 8px;
     font-size: 20px;
-    gap: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 
@@ -458,7 +461,7 @@ li{
 
 #Projects h1{
     font-size: 20px;
-    margin-left: 8px;
+    margin-left: 1px;
 }
 
 #Projects img{
