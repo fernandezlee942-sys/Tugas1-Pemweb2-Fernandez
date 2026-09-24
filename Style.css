@@ -337,8 +337,6 @@ a{
             rgba(0, 0, 0, 0.4) 40deg
         );
     animation: spin 4s linear infinite;
-    margin: 0;
-    flex-shrink: 0;
 }
 
 
@@ -531,10 +529,7 @@ li{
 
 .spiralBW {
     margin: 0;
-    max-width: 10px;
-    max-height: 10px;
-    aspect-ratio: 1/1;
-    flex-shrink: 0;
+    width: 10px;
 }
 
 
