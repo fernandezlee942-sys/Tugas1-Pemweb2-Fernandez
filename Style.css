@@ -200,6 +200,8 @@ a{
     margin-top: 10px;
     outline: solid black 5px;
     position: relative;
+
+    
 }
 
 .clockHour{
@@ -295,7 +297,6 @@ a{
     width: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    overflow: hidden;
     background: 
         repeating-conic-gradient(
             from 0deg,
@@ -320,7 +321,6 @@ a{
     width: 200px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    overflow: hidden;
     background: 
         repeating-conic-gradient(
             from 0deg,
@@ -422,7 +422,7 @@ li{
 
 #Home img{
     width: auto;
-    height: 230px;
+    height: 100px;
 }
 
 .Introduction{
@@ -498,8 +498,9 @@ li{
 
 
 .clock{
+    width: 100px;
     margin-right: 3px;
-    height: 40px;
+    height: 30px;
     margin-top: 4px;
     outline: solid black 3px;
 }
@@ -517,7 +518,9 @@ li{
 }
 
 .dot{
-    width: 4px;
+    top: calc(50% - 1px);
+    left: calc(50% - 1px);
+    width: 2px;
 }
 
 
