@@ -80,9 +80,11 @@
     border-bottom: solid black 4px;
     display: inline-block;
 }
+
 .AboutContent{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #Skills{
