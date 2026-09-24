@@ -537,6 +537,7 @@ li{
     max-width: 10px;
     max-width: 10px;
     aspect-ratio: 1/1;
+    flex-shrink: 0;
 }
 
 
