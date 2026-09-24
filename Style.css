@@ -135,14 +135,12 @@
 }
 #Projects img{
     max-width: 200px;
-    max-height: 200px;
-
+    width: 100%;
 }
 
 #Projects ul{
     margin: 0;
 }
-
 
 
 #Contact{
@@ -194,7 +192,8 @@ a{
 
 .clock{
     margin-right: 10px;
-    height: 200px;
+    max-width: 160px;
+    width: 100%;
     aspect-ratio: 1/1;
     background-color: rgb(183, 178, 178);
     border-radius: 50%;
