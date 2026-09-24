@@ -338,6 +338,7 @@ a{
         );
     animation: spin 4s linear infinite;
     margin: 0;
+    flex-shrink: 0;
 }
 
 
@@ -540,9 +541,9 @@ li{
 }
 
 .spiralBW {
-    flex-shrink: 0;
     margin: 0;
     width: 100px;
+    flex-shrink: 0;
 }
 
 
