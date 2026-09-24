@@ -502,6 +502,7 @@ li{
     height: 30px;
     margin-top: 4px;
     outline: solid black 3px;
+    flex-shrink: 0;
 }
 
 .clockHour{
